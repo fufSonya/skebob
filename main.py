@@ -12,7 +12,6 @@ def main():
 
     while True:
         try:
-            # Ввод + раскрытие переменных окружения
             raw_command = input(f"{VFS_NAME}> ").strip()
             if not raw_command:
                 continue
@@ -27,7 +26,6 @@ def main():
 
         cmd = args[0]
 
-        # Обработка команд
         if cmd == "exit":
             print("Выход...")
             break
